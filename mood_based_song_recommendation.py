@@ -5,8 +5,6 @@ import re
 import urllib.parse
 import webbrowser
 import pandas as pd
-import tkinter as tk
-from tkinter import ttk, messagebox
 
 # ---------- Configuration: put your files here ----------
 TELUGU_CSV = "telugu_songs1_dataset.csv"
@@ -299,3 +297,4 @@ ttk.Button(btn_frame2, text="Open Selected Link", command=open_selected_link).pa
 show("input")
 
 root.mainloop()
+
