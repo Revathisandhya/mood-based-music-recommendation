@@ -18,4 +18,5 @@ else:
     st.info("No songs match your filters. Try different mood or source.")
 
 st.markdown("---")
-st.write("If this UI needs to match specific columns in your CSV, tell m
+st.write("If this UI needs to match specific columns in your CSV, tell me the column names or paste first 10 rows and i'll adapt the app.")
+
