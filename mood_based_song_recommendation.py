@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import streamlit as st
 import os
 import re
 import urllib.parse
@@ -296,4 +297,5 @@ ttk.Button(btn_frame2, text="Open Selected Link", command=open_selected_link).pa
 
 # Start app on input page
 show("input")
+
 root.mainloop()
