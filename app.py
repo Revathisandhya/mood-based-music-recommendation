@@ -222,7 +222,7 @@ else:
         return link
     display_df["Link"] = display_df.apply(ensure_link, axis=1)
     display_df.index = range(1, len(display_df)+1)
-    show_cols = ["Title","Artist","Movie","Mood","Dataset","Link"]
+    show_cols = ["Title","Movie","Mood","Dataset","Link"]
     st.dataframe(display_df[show_cols], use_container_width=True)
     st.markdown("---")
     st.subheader("Open a song")
