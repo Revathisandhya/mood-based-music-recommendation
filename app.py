@@ -228,12 +228,11 @@ else:
     st.subheader("Open a song")
     for i, row in display_df.iterrows():
         title = row["Title"]
-        artist = row.get("Artist","")
         url = row.get("Link","")
         if url:
-            st.markdown(f"{i}. {title}** — {artist} — [{url}]({url})")
+            st.markdown(f"{i}. {title}** — [{url}]({url})")
         else:
-            st.markdown(f"{i}. {title}** — {artist} — (no link)")
+            st.markdown(f"{i}. {title}** — (no link)")
 
 st.markdown("---")
 st.caption("If the UI doesn't match your CSV columns, tell me the column names or paste first 10 rows and I'll adapt the app.")
